@@ -69,7 +69,7 @@ public:
     }
 };
 
-int main(int argc, char* argv[]) {
+int testmain(int argc, char* argv[]) {
     bool decodeMode = false;
 
     if (argc > 1 && std::string(argv[1]) == "-d") {
