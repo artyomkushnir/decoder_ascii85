@@ -9,6 +9,12 @@ $ ascii85    # читает байты из STDIN и выдаёт ASCII85 в STD
 $ ascii85 -e # то же самое
 $ ascii85 -d # читает ASCII85 из STDIN и выдаёт байты в STDOUT; при ощбке завершается с кодом, отличным от 0
 ```
+## Запуск тестов
+
+```
+$ g++ -std=c++14 -pthread ascii85.cpp ascii85_test.cpp -lgtest -lgtest_main -o ascii85_test
+$ ./ascii85_test
+```
 
 Задачи:
 
